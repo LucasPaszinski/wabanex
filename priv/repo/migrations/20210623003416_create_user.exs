@@ -3,7 +3,7 @@ defmodule Wabanex.Repo.Migrations.CreateUser do
 
   def change do
     create table(:users) do
-      add :email , :string
+      add :email, :string
       add :name, :string
       add :password, :string
 
