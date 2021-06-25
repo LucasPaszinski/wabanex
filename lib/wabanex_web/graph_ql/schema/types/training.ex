@@ -6,7 +6,6 @@ defmodule WabanexWeb.GraphQL.Schema.Types.Training do
     field :id, non_null(:uuid4)
     field :start_date, non_null(:date)
     field :end_date, non_null(:date)
-    field :user, non_null(:user)
     field :exercises, non_null(list_of(non_null(:exercise)))
   end
 

@@ -5,7 +5,7 @@ defmodule Wabanex.Training.Index do
   def trainings do
     trainings =
       from(t in Training,
-        preload: [:exercises, :user]
+        preload: [:exercises]
       )
       |> Repo.all()
 
