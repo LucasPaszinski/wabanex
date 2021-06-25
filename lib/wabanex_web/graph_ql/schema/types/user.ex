@@ -1,10 +1,6 @@
 defmodule WabanexWeb.GraphQL.Schema.Types.User do
   use Absinthe.Schema.Notation
 
-  alias WabanexWeb.GraphQL.Schema.Types.Custom.UUID4
-
-  import_types(UUID4)
-
   @desc "Logic user representation"
   object :user do
     field :id, non_null(:uuid4)

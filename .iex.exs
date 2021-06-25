@@ -1,2 +1,2 @@
 alias Wabanex.Repo
-alias Wabanex.User
+alias Wabanex.{User, Training, Exercise}
