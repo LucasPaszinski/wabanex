@@ -26,3 +26,9 @@ wabanex-*.tar
 # we ignore priv/static. You may want to comment
 # this depending on your deployment strategy.
 /priv/static/
+
+# Elixir language server should not be commited (i guess)
+/.elixir_ls/
+
+# Lauch config are stock, no need to commit then
+/.vscode/
