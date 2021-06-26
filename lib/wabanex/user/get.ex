@@ -1,7 +1,6 @@
 defmodule Wabanex.User.Get do
   alias Wabanex.{User, Repo}
   import Wabanex.Training.Get, only: [get_active_user_training_and_exercises: 1]
-  import Ecto.Query
 
   def get_user(id) do
     with {:ok, uuid} <- Ecto.UUID.cast(id),
